@@ -1,0 +1,20 @@
+name: More information
+description: If you want me to update more information in this site
+body:
+  - type: checkboxes
+    attributes:
+      label: More Details
+      description: Please be specific on what details you would like me update
+      options:
+        - label: Please do not request anything personal which cannot be shared.
+          required: true
+  - type: textarea
+    attributes:
+      label: Required info
+      description: Please list down all the things you would like to see in my site.
+      placeholder: |-
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
