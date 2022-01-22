@@ -11,6 +11,5 @@ mkdocs_minify_plugin
 mkdocs-redirects
 mkdocs-exclude
 mkdocs-git-revision-date-localized-plugin
-mkdocs-material-extensions
 pymdown-extensions
-materialx
+#materialx
