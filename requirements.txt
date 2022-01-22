@@ -5,3 +5,12 @@ mkdocs>=1.2.3
 mkdocs-material-extensions>=1.0
 pygments>=2.10
 pymdown-extensions>=9.0
+
+#Optional
+mkdocs_minify_plugin
+mkdocs-redirects
+mkdocs-exclude
+mkdocs-git-revision-date-localized-plugin
+mkdocs-material-extensions
+pymdown-extensions
+materialx
