@@ -10,6 +10,6 @@ pymdown-extensions>=9.0
 mkdocs_minify_plugin
 mkdocs-redirects
 mkdocs-exclude
-mkdocs-git-revision-date-localized-plugin
-pymdown-extensions
+mkdocs-git-revision-date-localized-plugin>=0.11
+#pymdown-extensions
 #materialx
