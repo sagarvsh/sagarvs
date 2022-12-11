@@ -83,7 +83,7 @@
     "postcss": "^8.4.5",
     "postcss-dir-pseudo-class": "^6.0.2",
     "postcss-inline-svg": "^5.0.0",
-    "postcss-logical": "^5.0.2",
+    "postcss-logical": "^5.0.4",
     "preact": "^10.6.4",
     "rimraf": "^3.0.2",
     "sass": "^1.47.0",
@@ -92,10 +92,10 @@
     "stylelint-config-recommended": "^6.0.0",
     "stylelint-config-standard-scss": "^3.0.0",
     "stylelint-scss": "^4.1.0",
-    "svgo": "2.3.1",
+    "svgo": "3.0.2",
     "tiny-glob": "^0.2.9",
     "ts-node": "^10.4.0",
-    "typescript": "^4.5.4"
+    "typescript": "^4.9.3"
   },
   "engines": {
     "node": ">= 14"
