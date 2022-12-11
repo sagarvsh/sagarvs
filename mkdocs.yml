@@ -140,7 +140,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Getting started:
-    - Installation: getting-started.md
+    - Indroduction: cover-letter.md
     - Creating your site: creating-your-site.md
     - Publishing your site: publishing-your-site.md
     - Browser support: browser-support.md
