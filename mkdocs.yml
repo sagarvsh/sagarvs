@@ -149,14 +149,14 @@ nav:
     - Changelog:
       - changelog/index.md
       - How to upgrade: upgrade.md
-  - Overview:
+  - Resume:
     - overview/index.md
     - Area of expertise: overview/area-of-expertise.md
     - Extensions:
       - setup/extensions/index.md
       - Python Markdown: setup/extensions/python-markdown.md
-  - Reference:
-    - reference/index.md
+  - Code Snippets:
+    - code/index.md
   - Blog:
     - blog/index.md
     - 2021:

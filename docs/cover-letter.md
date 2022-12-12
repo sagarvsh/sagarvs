@@ -1,3 +1,12 @@
+---
+template: overrides/main.html
+description: >
+  Three new simple ways to exclude dedicated parts of a document from the search
+  index, allowing for more fine-grained control
+title: Cover Letter
+hero: Cover Letter
+---
+
 # Sagar Valagerehally Shankaraiah
 
 **Senior Project Manager | Product Owner | DevOps Architect | AWS Certified | CICD Tools Expert**
@@ -14,11 +23,16 @@
     * Created holistic view on Investment, TCO savings and ROI to achieve Business and IT KPI’s and simplify the IT landscape
 
     Building architectural designs to implement DevOps tools based on the business needs. Expert in tools evaluation, comparison, and building CICD pipeline including Continuous Testing and Continuous Monitoring.
-    
+
     * Continuous Quality, Code Analytics and Code Coverage implementation with Jenkins pipeline automation to shift left
     * Provide recommendations for tools selection by analyzing and evaluating from the wide range of DevOps Tools
     * Strong grip on best practices and industry standard proven tool solution, there by enabled right fitment of required tooling for complex business requirement
     * Well versed with Kanban Agile delivery methodology
+
+<figure markdown>
+  ![Image title](./images/SAFe-DevOps-Practitioner.png){ width="300" }
+  <figcaption>SAFe DevOps Practitioner 2023</figcaption>
+</figure>
 
 !!! tip "DevOps Tools:"
 
