@@ -34,6 +34,32 @@ hero: Cover Letter
   <figcaption>SAFe DevOps Practitioner 2023</figcaption>
 </figure>
 
+<figure markdown>
+  ![Image title](https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/25545456){ width="100" }
+  <figcaption>SAFe DevOps Practitioner 2023</figcaption>
+</figure>
+
+
+<iframe
+  src="https://certificates.cloudbees.com/embed/0a217355-d854-4cc7-9bfd-7d576e72127c"
+  width="800"
+  height="600"
+  frameborder="0"
+  allowfullscreen>
+</iframe>
+
+<div class="row">
+<div class="column">
+    <img src="./images/Cloudbees-Jenkins-Engineer.png" alt="Snow" style="width:100%">
+</div>
+<div class="column">
+    <img src="../../docs/images/Cloudbees-Jenkins-Engineer.png" alt="Forest" style="width:100%">
+</div>
+<div class="column">
+    <img src="../../docs/images/Gremlin-Cahos-Engineering.png" alt="Mountains" style="width:100%">
+</div>
+</div>
+
 !!! tip "DevOps Tools:"
 
     * GitHub Enterprise
