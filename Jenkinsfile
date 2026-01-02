@@ -8,7 +8,7 @@ pipeline {
         stage ('Publish') {
             steps {
                 step (
-                sshagent(['GitHub-ID']) {
+                sshagent(['GitHub-SSH-Key']) {
                     sh """#!/bin/sh
                     python3 -m venv $HOME/venv
                     source $HOME/venv/bin/activate
