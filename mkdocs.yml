@@ -2,9 +2,9 @@ site_name: Sagar V S
 site_url: https://sagarvsh.github.io/sagarvs/
 site_author: Sagar V S
 site_description: >- 
-  Former DevOps Engineer/Architect turned Senior Project Manager & Prodcut Owner.
-  I help build enterprise DevOps solutions,
-  setup, and manage CICD tools
+  Former DevOps Architect turned Senior Project Manager and Product Owner, 
+  specializing in building, scaling, and governing 
+  enterprise CI/CD and DevOps platforms.
 
 # Repository
 repo_name: sagarvsh/sagarvs
@@ -12,7 +12,7 @@ repo_url: https://github.com/sagarvsh/sagarvs
 edit_uri: ""
 
 # Copyright
-copyright: Copyright &copy; 2021 Sagar V S
+copyright: Copyright &copy; 2026 Sagar V S
 
 # Configuration
 theme:
@@ -139,16 +139,9 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
-  - Getting started:
-    - Indroduction: cover-letter.md
-    - Creating your site: creating-your-site.md
-    - Publishing your site: publishing-your-site.md
-    - Browser support: browser-support.md
-    - Customization: customization.md
-    - License: license.md
-    - Changelog:
-      - changelog/index.md
-      - How to upgrade: upgrade.md
+  - About Me:
+    - Introduction: about-me.md
+    - Cover Sheet: cover-letter.md
   - Resume:
     - overview/index.md
     - Area of expertise: overview/area-of-expertise.md
