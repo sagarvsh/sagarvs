@@ -6,6 +6,9 @@ site_description: >-
   specializing in building, scaling, and governing 
   enterprise CI/CD and DevOps platforms.
 
+# Explicit site-level favicon (helps MkDocs core and some themes pick up the file)
+site_favicon: assets/favicon-v2.png
+
 # Repository
 repo_name: sagarvsh/sagarvs
 repo_url: https://github.com/sagarvsh/sagarvs
@@ -31,7 +34,7 @@ theme:
   language: en
   features:
     - content.code.annotate
-    # - content.tabs.link
+    - content.tabs.link
     # - header.autohide
     # - navigation.expand
     - navigation.indexes
@@ -61,9 +64,10 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  favicon: assets/favicon.png
+  favicon: assets/favicon-v2.png
   icon:
-    logo: logo
+    # logo: logo
+    logo: material/rocket
 
 # Plugins
 plugins:
@@ -95,6 +99,10 @@ extra:
     - icon: fontawesome/brands/instagram
       link: https://instagram.com/sagarvs
 
+# Custom CSS
+extra_css:
+  - assets/css/extra.css
+
 # Extensions
 markdown_extensions:
   - admonition
@@ -112,9 +120,9 @@ markdown_extensions:
       smart_enable: all
   - pymdownx.caret
   - pymdownx.details
-  # - pymdownx.emoji:
-  #     emoji_index: !!python/name:materialx.emoji.twemoji
-  #     emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.emoji
+  #     emoji_index: !!python/name:material.extensions.emoji.twemoji
+  #     emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
@@ -135,6 +143,7 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - pymdownx.details
 
 # Page tree
 nav:
@@ -143,6 +152,13 @@ nav:
     - Introduction: about-me.md
     - Cover Sheet: cover-letter.md
   - Resume:
+    - Resume: resume/resume.md
+    - CICD Evolution: resume/cicd-evolution.md
+    - Experience: resume/experience.md
+    - Skills: resume/skills.md
+    - Education: resume/education.md
+    - Certifications: resume/certifications.md
+  - Projects:
     - overview/index.md
     - Area of expertise: overview/area-of-expertise.md
     - Extensions:
