@@ -1,3 +1,14 @@
+---
+template: overrides/blog.html
+description: >
+  Three new simple ways to exclude dedicated parts of a document from the search
+  index, allowing for more fine-grained control
+search:
+  exclude: true
+hide:
+  - feedback
+---
+
 # Forked Repo for developing your app is not a best practice
 
 ***Draft***

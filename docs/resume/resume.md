@@ -31,48 +31,59 @@ Senior technology leader with **18+ years of experience** driving enterprise-sca
     - Agile / SAFe Product Leadership  
     - Global Team Leadership (100+ engineers)
 
----
+    ---
 
-### ⚙️ **DevOps & CI/CD**
+#### 🔄 **DevOps & CI/CD**
 
-<div class="grid cards" markdown>
+!!! tip "🔄 **DevOps & CI/CD**" 
 
----
-  - CI/CD Product Ownership
-  - Platform Engineering
-  - DevSecOps Governance
-  - Pipeline Standardization
-  - Developer Enablement
+    - CI/CD Product Ownership
+    - Platform Engineering
+    - DevSecOps Governance
+    - Pipeline Standardization
+    - Developer Enablement
 
-### ☁️ **Cloud & Platforms**
+    ---
+
+#### ☁️ **Cloud & Platforms**
+
+!!! tip "☁️ **Cloud & Platforms**"
+
+    - AWS
+    - OpenShift (OCP)
+    - Kubernetes
+    - Docker
+    - Infrastructure as Code
+
+    ---
+
+#### 🔐 **Security & Compliance**
+
+!!! tip "🔐 **Security & Compliance**"
+
+    - Shift-Left Security
+    - SAST / DAST / SCA
+    - Secrets & Sensitive Data Scanning
+    - Enterprise Policy Enforcement
+
   ---
-  - AWS
-  - OpenShift (OCP)
-  - Kubernetes
-  - Docker
-  - Infrastructure as Code
 
-### 🔐 **Security & Compliance**
-  ---
-  - Shift-Left Security
-  - SAST / DAST / SCA
-  - Secrets & Sensitive Data Scanning
-  - Enterprise Policy Enforcement
+#### 👥 **Leadership**
 
-### 👥 **Leadership**
-  ---
-  - Product Ownership
-  - Portfolio & Program Management
-  - Executive Stakeholder Management
-  - Global Team Leadership (100+)
-  - Agile / SAFe
+!!! tip "👥 **Leadership**"
 
-</div>
+    - Product Ownership
+    - Portfolio & Program Management
+    - Executive Stakeholder Management
+    - Global Team Leadership (100+)
+    - Agile / SAFe
 
+    ---
 
 ## 🏅 Certifications
 
-!!! tip
+!!! tip "🏅 Certifications"
+
     - AWS Certified Cloud Practitioner  
     - SAFe 5 DevOps Practitioner  
     - Certified CloudBees Jenkins Engineer  

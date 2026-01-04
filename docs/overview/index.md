@@ -67,7 +67,8 @@ at the top of a Markdown file:
 
 ``` bash
 ---
-icon: material/emoticon-happy # (1)!
+# icon: material/emoticon-happy # (1)!
+icon: assets/favicon.png # (1)!
 ---
 
 # Document title
