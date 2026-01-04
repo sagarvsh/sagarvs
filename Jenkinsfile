@@ -5,18 +5,18 @@ pipeline {
         LANG = "en_US.UTF-8"
     }
     stages {
-        stage ('Publish') {
+        stage('Publish') {
             steps {
-                step (
-                sshagent(['GitHub-SSH-Key']) {
-                    sh """#!/bin/sh
-                    python3 -m venv $HOME/venv
-                    source $HOME/venv/bin/activate
-                    pip install --requirement=requirements.txt
-                    mkdocs gh-deploy
-                    """
-                   }
-                )
+                sshagent(credentials: ['GitHub-SSH-Key']) {
+                    sh '''#!/bin/sh
+                        set -euo pipefail
+                        python3 -m venv .venv
+                        . .venv/bin/activate
+                        pip install --upgrade pip
+                        pip install --requirement=requirements.txt
+                        mkdocs gh-deploy
+                        '''
+                }
             }
         }
     }
