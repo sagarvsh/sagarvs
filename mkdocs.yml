@@ -6,9 +6,6 @@ site_description: >-
   specializing in building, scaling, and governing 
   enterprise CI/CD and DevOps platforms.
 
-# Explicit site-level favicon (helps MkDocs core and some themes pick up the file)
-site_favicon: assets/favicon-v2.png
-
 # Repository
 repo_name: sagarvsh/sagarvs
 repo_url: https://github.com/sagarvsh/sagarvs
@@ -74,11 +71,6 @@ plugins:
   - search
   - redirects:
       redirect_maps:
-        changelog/insiders.md: insiders/changelog.md
-        reference/meta-tags.md: reference/index.md
-        reference/variables.md: https://mkdocs-macros-plugin.readthedocs.io/
-        sponsorship.md: insiders/index.md
-        upgrading.md: upgrade.md
   - minify:
       minify_html: true
 
@@ -161,12 +153,8 @@ nav:
   - Projects:
     - overview/index.md
     - Area of expertise: overview/area-of-expertise.md
-    - Extensions:
-      - setup/extensions/index.md
-      - Python Markdown: setup/extensions/python-markdown.md
   - Code Snippets:
     - code/index.md
+    - code/reference-code.md
   - Blog:
     - blog/index.md
-    - 2021:
-      - blog/2021/the-past-present-and-future.md

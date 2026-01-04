@@ -2,7 +2,7 @@
 
 !!! info "Contact"
     **Location:** Chicago, Illinois  
-    **Mobile:** +1 (***) ***-7848  
+    **Mobile:** +1 (000) 000 7848
     **Email:** vs.sagar@gmail.com  
     **LinkedIn:** https://www.linkedin.com/in/sagarvs  
     **Homepage:** https://sagarvsh.github.io/sagarvs  

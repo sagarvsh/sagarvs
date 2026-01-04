@@ -16,98 +16,49 @@ search:
 ## [The past, present and future]
 
 __2021 was a fantastic year for this project as we shipped many new awesome
-features, saw significant user growth and leveraged GitHub Sponsors to make the
+features, saw significant user growth to make the
 project sustainable.__
 
 <aside class="mdx-author" markdown>
-![@squidfunk][@squidfunk avatar]
+![@sagarvsh][@sagarvsh avatar]
 
-<span>__Martin Donath__ · @squidfunk</span>
+<span>__Sagar V Shankaraiah__ · @sagarvsh</span>
 <span>
-:octicons-calendar-24: December 27, 2021 ·
+:octicons-calendar-24: January 1, 2021 ·
 :octicons-clock-24: 10 min read
 </span>
 </aside>
 
-  [@squidfunk avatar]: https://avatars.githubusercontent.com/u/932156
+  [@sagarvsh avatar]: https://avatars.githubusercontent.com/u/23294710
 
 ---
 
-Today, together, MkDocs and Material for MkDocs are among the most popular
-options when it comes to choosing a static site generator and theme for your
-technical documentation project. Material for MkDocs ensures that your
-content is always perfectly presented to your audience, regardless of screen
-resolution or device capabilities. It has evolved to a framework for technical
-writing, offering many features, some of which are yet to be found in other
-static site generators. However, we're far from the end, as 2022 is going to
-bring some interesting new capabilities.
+# Forked Repo for developing your app is not a best practice
 
-  [:octicons-arrow-right-24: Continue reading][The past, present and future]
+***Draft***
 
-  [The past, present and future]: 2021/the-past-present-and-future.md
+In recent days it's found that an increasing number of development teams have started to use forked repo for the development of the parent repo. 
+This is **bad development practice** and must be avoided. 
 
-## [Excluding content from search]
+You can fork the repo when you want to freely experiment with changes without affecting the original project or you like to contribute to a different project which you do not belong to. 
 
-__The latest Insiders release brings three new simple ways to exclude dedicated
-parts of a document from the search index, allowing for more fine-grained
-control.__
+If you are part of the development team, you must use a branch, it’s incredibly fast, effective, and easy. Creating a fork will replicate the entire original repository, the fork does not stay synchronized and takes the additional manual effort to keep the forked repo synchronized and merging pull requests are damn slow which will also impact Sedated security scanning. 
 
-<aside class="mdx-author" markdown>
-![@squidfunk][@squidfunk avatar]
+All this additional effort will take a toll on GitHub performance, storage, security scanning and most of all developer's agility, efforts and time. 
 
-<span>__Martin Donath__ · @squidfunk</span>
-<span>
-:octicons-calendar-24: September 26, 2021 ·
-:octicons-clock-24: 5 min read ·
-[:octicons-tag-24: 7.3.0+insiders-3.1.1][insiders-3.1.1]
-</span>
-</aside>
+Pros: 
 
----
 
-Two weeks ago, Material for MkDocs Insiders shipped a brand new search plugin,
-yielding massive improvements in usability, but also in speed and size of the
-search index. Interestingly, as discussed in the previous blog article, we only
-scratched the surface of what's now possible. This release brings some useful
-features that enhance the writing experience, allowing for more fine-grained
-control of what pages, sections and blocks of a Markdown file should be indexed
-by the built-in search functionality.
+Cons:
 
-[:octicons-arrow-right-24: Continue reading][Excluding content from search]
+Suggestions:
+Good branching practices and a solid understanding of branching methodologies are paramoutn to cohesive, risk-reductive code collaboration between developers. This also reliably scales as the size of the project team does. 
 
-  [Excluding content from search]: 2021/excluding-content-from-search.md
-  [insiders-3.1.1]: ../insiders/changelog.md#3.1.1
+Reference:
 
-## [Search: better, faster, smaller]
+I found these three posts to be the best for explaining the Git Branching model - and they even give examples with precise syntax.
 
-__This is the story of how we managed to completely rebuild client-side search,
-delivering a significantly better user experience while making it faster and
-smaller at the same time.__
-
-<aside class="mdx-author" markdown>
-![@squidfunk][@squidfunk avatar]
-
-<span>__Martin Donath__ · @squidfunk</span>
-<span>
-:octicons-calendar-24: September 13, 2021 ·
-:octicons-clock-24: 15 min read ·
-[:octicons-tag-24: 7.2.6+insiders-3.0.0][insiders-3.0.0]
-</span>
-</aside>
-
----
-
-The search of Material for MkDocs is by far one of its best and most-loved
-assets: multilingual, offline-capable, and most importantly: _all client-side_.
-It provides a solution to empower the users of your documentation to find what
-they're searching for instantly without the headache of managing additional
-servers. However, even though several iterations have been made, there's still
-some room for improvement, which is why we rebuilt the search plugin and
-integration from the ground up. This article shines some light on the internals
-of the new search, why it's much more powerful than the previous version, and
-what's about to come.
-
-[:octicons-arrow-right-24: Continue reading][Search: better, faster, smaller]
-
-  [Search: better, faster, smaller]: 2021/search-better-faster-smaller.md
-  [insiders-3.0.0]: ../insiders/changelog.md#3.0.0
+https://nvie.com/posts/a-successful-git-branching-model/
+https://datasift.github.io/gitflow/IntroducingGitFlow.html?b...
+https://www.atlassian.com/git/tutorials/comparing-workflows/...
+** The author of the top one is credited with being the creator of the Git branching model so he knows a thing or two about it.
