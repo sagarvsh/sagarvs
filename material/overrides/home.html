@@ -28,7 +28,7 @@
 
     /* Preserve intrinsic aspect ratio: fix height only and let width scale */
     .certification img {
-      height: 128px;
+      height: clamp(96px, 8vw, 128px);
       width: auto;
       max-width: none;
       object-fit: contain;
@@ -45,16 +45,24 @@
     }
 
     @media (max-width: 768px) {
+      /* Ensure hero is a positioned ancestor so badges can be absolutely anchored at bottom */
+      .mdx-hero { position: relative; }
+
       .certification-badges {
-        position: relative;
-        bottom: auto;
-        left: auto;
+        position: absolute;
+        bottom: 16px;
+        left: 50%;
+        transform: translateX(-50%);
         justify-content: center;
-        margin: 12px auto;
-        max-width: 100%;
+        margin: 0 auto;
+        max-width: calc(100% - 32px);
         padding: 6px 8px;
+        gap: 12px;
       }
-      .certification img { height: 96px; }
+
+      .certification img {
+        height: clamp(56px, 12vw, 96px);
+      }
     }
   </style>
   <section class="mdx-container">
