@@ -6,36 +6,62 @@
   {{ super() }}
   <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
   <style>
+    /* Keep badges on a single horizontal line, allow horizontal scroll on small screens */
     .certification-badges {
       position: absolute;
-      top: 120px;
-      right: 40px;
+      bottom: 120px;
+      left: 40px;
       display: flex;
       gap: 15px;
       align-items: center;
       z-index: 2;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      max-width: 250px;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+      overflow-x: auto;
+      overflow-y: visible;
+      -webkit-overflow-scrolling: touch;
+      max-width: calc(100% - 80px);
+      padding-top: 24px;
+      padding-bottom: 24px; /* extra space so hover transform doesn't get clipped */
+      pointer-events: auto;
     }
+
+    /* Preserve intrinsic aspect ratio: fix height only and let width scale */
     .certification img {
-      max-width: 100px;
-      height: 100px;
-      transition: transform 0.3s ease;
-      filter: drop-shadow(0 2px 5px rgba(0,0,0,0.2));
+      height: clamp(96px, 8vw, 128px);
+      width: auto;
+      max-width: none;
+      object-fit: contain;
+      transition: transform 0.18s ease;
+      filter: drop-shadow(0 2px 5px rgba(0,0,0,0.12));
+      transform-origin: center bottom;
+      will-change: transform;
     }
+
+    /* Use translate + small scale so element moves upward instead of expanding upward and being clipped */
     .certification img:hover {
-      transform: scale(1.1);
-      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+      transform: translateY(-12px) scale(1.04);
+      filter: drop-shadow(0 6px 12px rgba(0,0,0,0.18));
     }
+
     @media (max-width: 768px) {
+      /* Ensure hero is a positioned ancestor so badges can be absolutely anchored at bottom */
+      .mdx-hero { position: relative; }
+
       .certification-badges {
-        position: relative;
-        top: 0;
-        right: 0;
+        position: absolute;
+        bottom: 16px;
+        left: 50%;
+        transform: translateX(-50%);
         justify-content: center;
-        margin: 20px auto;
-        max-width: 100%;
+        margin: 0 auto;
+        max-width: calc(100% - 32px);
+        padding: 6px 8px;
+        gap: 12px;
+      }
+
+      .certification img {
+        height: clamp(56px, 12vw, 96px);
       }
     }
   </style>
@@ -51,7 +77,16 @@
         <img src="{{ 'assets/images/certifications/dataops.png' | url }}" alt="DataOps Certification" title="DataOps Certification">
       </div>
       <div class="certification">
+        <img src="{{ 'assets/images/certifications/gremlin-cahos-engineering.png' | url }}" alt="Gremlin CAHOS Engineering Certification" title="Gremlin CAHOS Engineering Certification">
+      </div>
+      <div class="certification">
         <img src="{{ 'assets/images/certifications/sdp-safe-agile-5.png' | url }}" alt="Safe 5 Certification" title="Cloudbees Safe 5 Certification">
+      </div>
+      <div class="certification">
+        <img src="{{ 'assets/images/certifications/cognizant-ai-for-leaders.png' | url }}" alt="Cognizant AI For Leaders" title="Cognizant AI For Leaders">
+      </div>
+      <div class="certification">
+        <img src="{{ 'assets/images/certifications/cognizant-cspm-mc1.png' | url }}" alt="Cognizant CSPM MC1" title="Cognizant CSPM MC1">
       </div>
     </div>
     <div class="md-grid md-typeset">
@@ -60,13 +95,13 @@
           <img src="assets/images/illustration.png" alt="" width="1659" height="1200" draggable="false">
         </div>
         <div class="mdx-hero__content">
-          <h1>Site under construction - Hello, I'm Sagar</h1>
+          <h1>Hello, I'm Sagar</h1>
           <p>{{ config.site_description }}. And have fun in the process!!!</p>
 
           <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
             Cover Sheet
           </a>
-          <a href="{{ 'insiders/' | url }}" title="Curriculum Vitae" class="md-button">
+          <a href="{{ 'resume/resume/' | url }}" title="Curriculum Vitae" class="md-button">
             Curriculum Vitae
           </a>
         </div>

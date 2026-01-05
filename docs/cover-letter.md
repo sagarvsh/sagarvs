@@ -30,7 +30,7 @@ hero: Cover Letter
     * Well versed with Kanban Agile delivery methodology
 
 <figure markdown>
-  ![Image title](./images/SAFe-DevOps-Practitioner.png){ width="300" }
+  ![Image title](./assets/images/certifications/sdp-safe-agile-5.png){ width="300" }
   <figcaption>SAFe DevOps Practitioner 2023</figcaption>
 </figure>
 
